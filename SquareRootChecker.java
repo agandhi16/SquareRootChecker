@@ -6,11 +6,26 @@
 * @version 13/10/14
 *
 */
+import java.util.Scanner;
 
 public class SquareRootChecker {
 	
 	public static void main(String[] args) {
-		// TODO - Put your code here
-	}
+      Scanner scnr = new Scanner(System.in);
+      
+      System.out.println("Enter Integer");
+      double sqrtNumber = scnr.nextDouble();
+      
+      if (sqrtNumber >= 0) {
+      sqrtNumber = Math.sqrt(sqrtNumber);
+      System.out.println ("The square root of this number is " + sqrtNumber);
+      
+      } else {
+         System.out.println ("Error 404");
+      }
+      return;
+}   
 
-}
+}  
+
+	
